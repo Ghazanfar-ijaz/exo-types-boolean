@@ -1,16 +1,23 @@
 let isRainy = true
-let temperature = 25
+let temperature = 1
 let clothes = ''
 
 if (isRainy) {
-  clothes += 'umbrella, ' // concatenation de string
+  clothes += 'umbrella, hoodie, '
 }
 
-if (temperature < 15) {
-  clothes += 'coat, '
-} else if (temperature >= 15 && temperature <= 20) {
-  clothes += 'sweater, '
-} else {
+if (temperature <= 15 && temperature >= 5) {
+  clothes += 'T-shirt, coat, pant, bobby socks, sneakers, '
+}
+
+else if (temperature >= 15 && temperature <= 25) {
+  clothes += 'sweater, pant, bobby socks, sneakers'
+}
+
+else if (temperature < 5) {
+  clothes += 'T-shirt, sweater, cap, scarf, pant, socks, boots'
+}
+else {
   clothes += 't-shirt, capris'
 }
 console.log(`Je vous recommande de porter: ${clothes}`)
