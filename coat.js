@@ -4,9 +4,9 @@
 let isRainy = true
 let isWindy = false
 let isCold = true
-let isHot = false
+let temperature = 7
 
-if (isRainy || isWindy || !isCold && isHot) {
+if ((isRainy || isWindy || isCold) && temperature < 10) {
   console.log('Mettez votre manteau')
 } else {
   console.log('Vous n avez pas besoin de manteau today')
